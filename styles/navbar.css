@@ -1,0 +1,60 @@
+body {
+  margin: 20px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+}
+
+.img {
+  max-width: 120px;
+  max-height: 120px;
+  padding: 20px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  width: 500px;
+}
+
+li {
+  border-right: 1px solid #bbb;
+  padding: 20px;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: inline-block;
+  color: rgb(217, 212, 213);
+  text-align: center;
+  padding: 0 16px;
+  text-decoration: none;
+  position: relative;
+}
+
+li a:hover {
+  color: white;
+}
+
+li a:hover::after {
+  content: "";
+  height: 2px;
+  width: 70%;
+  background-color: crimson;
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 15px;
+}

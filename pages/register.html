@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login form</title>
+    <link rel="stylesheet" href="../styles/register.css" />
+  </head>
+  <body>
+    <h1>Register for an Audible Membership</h1>
+    <form>
+      <!-- <div class="img">
+        <img src="../images/person_circle_icon_159926.png" alt="person logo" />
+      </div> -->
+      <p class="register-question">
+        Already registered? <a href="login.html">Login</a> here
+      </p>
+      <div class="inputs">
+        <div class="firstname">
+          <label for="firstname">First Name</label>
+          <input
+            type="text"
+            name="firstname"
+            id="firstname"
+            placeholder="enter your first name"
+          />
+        </div>
+        <div class="lastname">
+          <label for="lastname">Last Name</label>
+          <input
+            type="text"
+            name="lastname"
+            id="lastname"
+            placeholder="enter your last name"
+          />
+        </div>
+        <div class="email">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="enter your email"
+          />
+        </div>
+        <div class="password">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            placeholder="enter your password"
+            name="password"
+            id="password"
+          />
+        </div>
+        <div class="cpassword">
+          <label for="cpassword">Confirm Password</label>
+          <input
+            type="password"
+            placeholder="confirm your password"
+            name="cpassword"
+            id="cpassword"
+          />
+        </div>
+        <div class="gender">
+          Gender
+          <label for="genderfemale">
+            <input
+              type="radio"
+              name="gender"
+              id="genderfemale"
+              value="female"
+            />
+            Female</label
+          >
+
+          <label for="gendermale">
+            <input type="radio" name="gender" id="gendermale" value="male" />
+            Male</label
+          >
+        </div>
+        <div class="birthdate">
+          <label for="date">Date of Birth</label>
+          <input type="date" />
+        </div>
+        <div class="habits">
+          <label for="habits">Habits</label>
+          <input type="checkbox" /> You like sports
+          <input type="checkbox" /> You like to eat
+          <input type="checkbox" /> You like to sleep
+        </div>
+      </div>
+
+      <button type="button" class="btn">Register</button>
+    </form>
+  </body>
+</html>

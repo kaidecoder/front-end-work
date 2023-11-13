@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Layout</title>
+    <link rel="stylesheet" href="../styles/layout.css" />
+  </head>
+  <body>
+    <table>
+      <caption>
+        An HTML Layout
+      </caption>
+      <thead>
+        <tr>
+          <th colspan="2">header</th>
+        </tr>
+      </thead>
+      <tbody>
+        <div>
+          <tr>
+            <td colspan="2">nav</td>
+          </tr>
+        </div>
+        <tr>
+          <div>
+            <tr>
+              <td rowspan="1">section</td>
+
+              <td rowspan="3">aside</td>
+            </tr>
+          </div>
+
+          <div>
+            <tr>
+              <td rowspan="2">article</td>
+            </tr>
+          </div>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">footer</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

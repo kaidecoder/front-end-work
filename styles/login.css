@@ -1,0 +1,123 @@
+:root {
+  --hamburger-menu-bar: #232f3e;
+  --amazon-logo-bar: #131921;
+  --best-sellers-audible-books-originals: #0f1111;
+  --search-button-amazon-logo-bar: #febd68;
+  --orange-on-amazon-logo: #ff9900;
+  --orange-in-amazon-cart: #f08806;
+  --gray-on-dropdown-box-on-amazon-logo-bar: #e6e6e6;
+  --gray-in-delivering-to-atlanta: #cccccc;
+  --green-for-the-book-titles: #017184;
+  --orange-for-the-stars-inside: #ffa41c;
+  --orange-for-the-star-border: #e28433;
+  --color-on-the-number-of-each-book: #c45500;
+  --amazon-best-sellers-banner: #068599;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--gray-on-dropdown-box-on-amazon-logo-bar);
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--orange-for-the-star-border);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 600px;
+  width: 400px;
+  border: 1px solid white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background-color: var(--amazon-logo-bar);
+}
+
+img {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.email {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+input::placeholder {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.btn {
+  width: 120px;
+  padding: 10px 20px;
+  background-color: #febd68;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+label {
+  margin-bottom: 20px;
+}
+
+p:first-child {
+  font-size: 18px;
+  text-align: left;
+}
+
+.iframes > p,
+p:last-child {
+  font-size: 12px;
+  text-align: left;
+}
+
+.blank {
+  margin: 20px;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+a:visited {
+  color: #ccc;
+}
+a:hover {
+  color: purple;
+}
+a:active {
+  color: green;
+}
