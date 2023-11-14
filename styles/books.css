@@ -14,6 +14,7 @@
   --orange-for-the-star-border: #e28433;
   --color-on-the-number-of-each-book: #c45500;
   --amazon-best-sellers-banner: #068599;
+  --amazon-best-sellers-banner2: ##088296;
 }
 /* 
 font-family: 'Amazon Ember', sans-serif;
@@ -64,10 +65,16 @@ font-family: 'Amazon Ember V2', sans-serif; */
   padding: 8px 20px;
 }
 .fa-location-dot {
-  margin-right: 5px;
+  margin-right: 3px;
 }
-.address {
-  font-size: 14px;
+.address p {
+  font-size: 11px;
+  margin-bottom: -5px;
+  color: var(--gray-in-delivering-to-atlanta);
+}
+.address h6 {
+  font-size: 13px;
+  font-weight: bold;
 }
 
 .form {
@@ -301,22 +308,31 @@ a {
 /* start amazon best sellers bar */
 
 .amazonBestSellersBar {
-  text-align: center;
-  background-color: var(--amazon-best-sellers-banner);
-  padding: 20px;
-  color: white;
-  font-size: 25px;
+  background-image: radial-gradient(
+    #088296,
+    hsla(188, 92%, 31%, 0.8) 5%,
+    #088296
+  );
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
 }
 
 .amazonBestSellersBar p {
-  letter-spacing: 2px;
-  line-height: 1.5;
-  font-size: 50px;
+  letter-spacing: 0px;
+  font-size: 55px;
+  z-index: 50;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .amazonBestSellersBar p + p {
-  letter-spacing: 0;
+  letter-spacing: 1;
   font-size: 14px;
   font-weight: normal;
+  margin-top: -10px;
+  padding-bottom: 20px;
 }
 /* end amazon best sellers bar */
 
@@ -335,12 +351,20 @@ a {
 
 .left-side {
   padding: 0 20px;
-  width: 700px;
-  font-size: 14px;
-  line-height: 1.5;
+  width: 600px;
+  font-size: 12px;
+  line-height: 1.75;
+  margin-left: -30px;
 }
 .left-side a:hover {
   text-decoration: underline;
+}
+.left-side h4 {
+  margin-left: 15px;
+}
+
+.left-side ul {
+  margin-left: 25px;
 }
 
 li {
@@ -353,15 +377,11 @@ li a {
 }
 
 .left-side p {
-  margin-left: -20px;
+  margin-left: 5px;
 }
 .left-side p > a {
   color: #000;
   text-decoration: none;
-}
-
-.left-side ul {
-  margin-left: 20px;
 }
 
 /* end left side of features */
@@ -372,24 +392,24 @@ li a {
   display: flex;
   flex-wrap: wrap;
 }
-
-.booksContainer img {
-  width: 275px;
+.right-side-container h3 {
+  border-left: 1px solid #ccc;
+  padding: 10px;
 }
 
 .card {
-  width: 275px;
-  height: 325px;
+  width: 295px;
+  height: 320px;
   background-color: #fff;
-  border: 1px solid #ccc;
+  border: 1px solid rgba(204, 204, 204, 0.4);
   padding: 20px;
   position: relative;
-  font-size: 14px;
+  font-size: 12px;
   overflow: hidden;
 }
 
 .card a + h4 {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .card .title a,
@@ -397,14 +417,27 @@ li a {
   color: var(--green-for-the-book-titles);
 }
 
-.title a:hover {
-  color: red;
-  text-decoration: underline;
+.title a {
+  font-weight: normal;
 }
 
-.right-side-container h3 {
-  border-left: 1px solid #ccc;
-  padding: 20px;
+.title a:hover {
+  color: #b12605;
+  text-decoration: underline;
+}
+.card img {
+  width: 270px;
+  margin-top: 15px;
+  z-index: 50;
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 0px 0px,
+    rgba(0, 0, 0, 0.12) 0px 0px 0px,
+    rgba(0, 0, 0, 0.12) 0px 0px 0px,
+    rgba(0, 0, 0, 0.17) 0px 0px 0px,
+    rgba(0, 0, 0, 0.09) 0px 0px 0px;
+}
+.card .cost {
+  color: #b12605;
 }
 
 .order {
