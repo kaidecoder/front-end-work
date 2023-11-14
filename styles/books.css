@@ -51,9 +51,17 @@ font-family: 'Amazon Ember V2', sans-serif; */
   padding-top: 5px;
   margin-left: -30px;
 }
+.amazonLogo img:hover {
+  border: 1px solid white;
+  padding: 15px 20px;
+}
 
 .deliveryInfo {
   display: flex;
+}
+.deliveryInfo:hover {
+  border: 1px solid white;
+  padding: 8px 20px;
 }
 .fa-location-dot {
   margin-right: 5px;
@@ -78,7 +86,7 @@ font-family: 'Amazon Ember V2', sans-serif; */
   outline: none;
   border-radius: 5px 0 0 5px;
 }
-#audible span{
+#audible span {
   outline: none;
 }
 
@@ -136,7 +144,7 @@ font-family: 'Amazon Ember V2', sans-serif; */
   height: 20px;
 }
 
-.usPic:hover{
+.usPic:hover {
   border: 1px solid white;
 }
 
@@ -215,7 +223,7 @@ font-family: 'Amazon Ember V2', sans-serif; */
 }
 
 .menuIcon {
-  width: 80px;
+  width: 50px;
   font-weight: bold;
 }
 p span {
@@ -230,13 +238,14 @@ p span {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 95vw;
+  width: 99vw;
   font-size: 12px;
+  margin-right: 10px;
 }
 
 .menuItems p:last-child {
   font-weight: bold;
-  margin-left: 20px;
+  margin-left: 90px;
 }
 /* end amazon menu bar  */
 /* start audible menu bar  */
